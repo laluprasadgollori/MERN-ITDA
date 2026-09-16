@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f7f2;
+    color: #222;
+}
+
+/* NAVBAR */
+
+header {
+    background: #123c2a;
+    padding: 18px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    color: #f5c542;
+}
+
+/* HERO */
+
+.hero {
+    height: 85vh;
+    background:
+        linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.5)),
+        url("images/araku-hero.jpg") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    max-width: 750px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 30px;
+    background: #f5c542;
+    color: #123c2a;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* HOME */
+
+.welcome {
+    text-align: center;
+    padding: 70px 8%;
+}
+
+.welcome h2 {
+    font-size: 35px;
+    color: #123c2a;
+    margin-bottom: 15px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+}
+
+.card h3 {
+    color: #26734d;
+    margin-bottom: 10px;
+}
+
+/* PAGE TITLE */
+
+.page-title {
+    background: #1d5b40;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.page-title h1 {
+    font-size: 45px;
+}
+
+/* GALLERY */
+
+.gallery {
+    padding: 60px 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.12);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item h3 {
+    padding: 18px;
+}
+
+/* ABOUT */
+
+.about {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+}
+
+.about h2 {
+    color: #123c2a;
+    margin-bottom: 15px;
+}
+
+.about h3 {
+    margin-top: 25px;
+    color: #26734d;
+}
+
+.about ul {
+    margin-left: 25px;
+}
+
+/* PLACES */
+
+.places {
+    max-width: 1000px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.place {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #26734d;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+.place h2 {
+    color: #123c2a;
+    margin-bottom: 10px;
+}
+
+/* CONTACT */
+
+.contact {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info {
+    padding: 30px;
+}
+
+.contact-info h2 {
+    color: #123c2a;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 15px 0;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #123c2a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #26734d;
+}
+
+/* FOOTER */
+
+footer {
+    background: #123c2a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .cards,
+    .gallery,
+    .places,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title h1 {
+        font-size: 35px;
+    }
+}
